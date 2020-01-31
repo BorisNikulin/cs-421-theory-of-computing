@@ -1,0 +1,38 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{CS421 (02) HW1A}
+\rhead{Boris Nikulin \thepage}
+
+\begin{document}
+
+\begin{enumerate}
+	\item[Inter2.]
+		Prefixes of \texttt{abc} are $\{\lambda, a, ab, abc\}$.
+
+	\item[Problem 2.]
+		Prove $$\sum_{k=0}^n 2^k = 2^{n+1} - 1, n \geq 0$$
+
+		Basis $P(0)$ when $n = 0$
+		$$\sum_{k=0}^0 2^k = 2^0 = 1 = 2^1 - 1 = 2^{0+1} – 1$$
+		is true.
+
+		Assume $P(i)$ is true, $A_L = A_R$ when $n = i$
+		$$A_L = \sum_{k=0}^i 2^k = 2^{i+1} - 1 = A_R$$
+
+		Inductive step $P(i)$ to $P(i + 1)$
+		\begin{align*}
+			\sum_{k=0}^{i+1} 2^k &= 2^{i+2} - 1 \\
+				&= A_L + 2^{i+1} \\
+				&= A_R + 2^{i+1} = 2^1 \cdot 2^{i+1} \\
+				&= 2^{i+2} - 1
+		\end{align*}
+		$$\therefore \sum_{k=0}^n 2^k = 2^{n+1} - 1, n \geq 0$$
+\end{enumerate}
+
+\end{document}
