@@ -17,12 +17,18 @@ vector<char> T[R][C]; // 3 rows and 4 columns table for now
 
 // ------------------ Functions --------------------------------
 
+/** Converts character to distance from ascii leter 'a'.
+ *
+ * This makes 'a' 0 and 'b' 1 and so on.
+ */
 int convert(char x)
 {
 	return x - 'a';
 }
 
-int readTable()
+/** Reads a space separated table according to predefined format
+ */
+void readTable()
 {
 	int row, col; // row and col numbers
 	char col_c; // column indicator
@@ -37,20 +43,31 @@ int readTable()
 		char c; // one char from the file
 
 		// ** Fill v with chars from the file (there are VM chars)
+		for (int i = 0; i < VM; ++i)
+		{
+			fin >> c;
+			v.push_back(c);
+		}
+
 		// ** Put  v in T[row][col]
+		T[row][col] = v;
 	} // end of while
 }
 
-// Displays a vector or "---" if the vector is empty
+/** Displays a vector as a space separated list or "- - -" if empty
+ */
 void showVector(vector<char> v)
 {
 	if (v.size() == 0) // empty entry
 		for (int i = 1; i <= VM; i++)
-			cout << "- ";
-	else {
-		for (auto c : v)
 		{
-			cout << *v
+			cout << "- ";
+		}
+	else
+	{
+		for (char c : v)
+		{
+			cout << c << " ";
 		}
 	}
 	// show the content of v separated by blanks (e.g. "a b c")
@@ -59,14 +76,22 @@ void showVector(vector<char> v)
 // Displays T as a table, separating entries with "|"
 void displayTable()
 {
-	// ** display T nicely labeled with row numbers (col numbers not needed)
-	//	  by calling showVector
+	for (size_t i = 0; i < R; ++i)
+	{
+		cout << i;
+		for (size_t j = 0; j < C; ++j)
+		{
+			cout << "| ";
+			showVector(T[i][j]);
+		}
+		cout << '\n';
+	}
 }
 
 // Driver
 int main()
 {
 	cout << "Reading table from lines.txt..." << endl;
-	// readTable();
-	// displayTable();
+	readTable();
+	displayTable();
 } // the end
