@@ -1,0 +1,28 @@
+Script started on Fri 07 Feb 2020 05:42:48 PM PST
+]0;nikul001@empress:~/test/test/build[?1034h[nikul001@empress build]$ ./hw1b-recognizer[K
+0
+Yes in L
+1
+Yes in L
+2
+No not in L
+
+Yes in L
+ 
+No not in L
+11
+Yes in L
+111010101010101
+Yes in L
+0000101010101
+Yes in L
+1111 111
+No not in L
+000 00
+No not in L
+dfsf3 34tn
+No not in L
+^C
+]0;nikul001@empress:~/test/test/build[nikul001@empress build]$ exit
+
+Script done on Fri 07 Feb 2020 05:43:32 PM PST
