@@ -47,3 +47,5 @@ target_sources(hw2a
 	PUBLIC
 		mat.cpp
 )
+
+configure_file(${PROJECT_SOURCE_DIR}/lines.txt ${PROJECT_BINARY_DIR}/lines.txt COPYONLY)
