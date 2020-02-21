@@ -19,7 +19,7 @@ vector<char> T[R][C]; // 3 rows and 4 columns table for now
 
 int convert(char x)
 {
-    //**do a formula to convert a to 0, b to 1, c to 2 etc.
+	return x - 'a';
 }
 
 int readTable()
@@ -44,12 +44,16 @@ int readTable()
 // Displays a vector or "---" if the vector is empty
 void showVector(vector<char> v)
 {
-    if (v.size() == 0) // empty entry
-        for (int i = 1; i <= VM; i++)
-            cout << "- ";
-    else {
-    }
-    // show the content of v separated by blanks (e.g. "a b c")
+	if (v.size() == 0) // empty entry
+		for (int i = 1; i <= VM; i++)
+			cout << "- ";
+	else {
+		for (auto c : v)
+		{
+			cout << *v
+		}
+	}
+	// show the content of v separated by blanks (e.g. "a b c")
 }
 
 // Displays T as a table, separating entries with "|"
