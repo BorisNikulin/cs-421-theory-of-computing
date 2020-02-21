@@ -47,5 +47,6 @@ target_sources(hw2a
 	PUBLIC
 		mat.cpp
 )
+target_compile_features(hw2a PUBLIC cxx_range_for)
 
 configure_file(${PROJECT_SOURCE_DIR}/lines.txt ${PROJECT_BINARY_DIR}/lines.txt COPYONLY)
