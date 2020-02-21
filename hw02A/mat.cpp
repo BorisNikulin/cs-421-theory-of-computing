@@ -24,21 +24,21 @@ int convert(char x)
 
 int readTable()
 {
-    int row, col; // row and col numbers
-    char col_c; // column indicator
-    ifstream fin("lines.txt", ios::in);
+	int row, col; // row and col numbers
+	char col_c; // column indicator
+	ifstream fin("lines.txt", ios::in);
 
-    // Read in the file into T
-    while (fin >> row) // next line of file
-    {
-        fin >> col_c;
-        col = convert(col_c); // convert to a slot number
-        vector<char> v; // a vector to fill
-        char c; // one char from the file
+	// Read in the file into T
+	while (fin >> row) // next line of file
+	{
+		fin >> col_c;
+		col = convert(col_c); // convert to a slot number
+		vector<char> v; // a vector to fill
+		char c; // one char from the file
 
-        // ** Fill v with chars from the file (there are VM chars)
-        // ** Put  v in T[row][col]
-    } // end of while
+		// ** Fill v with chars from the file (there are VM chars)
+		// ** Put  v in T[row][col]
+	} // end of while
 }
 
 // Displays a vector or "---" if the vector is empty
@@ -59,14 +59,14 @@ void showVector(vector<char> v)
 // Displays T as a table, separating entries with "|"
 void displayTable()
 {
-    // ** display T nicely labeled with row numbers (col numbers not needed)
-    //	  by calling showVector
+	// ** display T nicely labeled with row numbers (col numbers not needed)
+	//	  by calling showVector
 }
 
 // Driver
 int main()
 {
-    cout << "Reading table from lines.txt..." << endl;
-    // readTable();
-    // displayTable();
+	cout << "Reading table from lines.txt..." << endl;
+	// readTable();
+	// displayTable();
 } // the end
