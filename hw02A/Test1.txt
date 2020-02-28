@@ -1,0 +1,9 @@
+Script started on Fri 21 Feb 2020 12:56:56 AM PST
+]0;nikul001@empress:~/cs-421-theory-of-computing/hw02A/build[?1034h[nikul001@empress build]$ ./hw2a
+Reading table from lines.txt...
+0| a b c | d e f | - - - | - - - 
+1| - - - | - - - | g h i | j k l 
+2| - - - | - - - | - - - | - - - 
+]0;nikul001@empress:~/cs-421-theory-of-computing/hw02A/build[nikul001@empress build]$ exit
+
+Script done on Fri 21 Feb 2020 12:57:09 AM PST
