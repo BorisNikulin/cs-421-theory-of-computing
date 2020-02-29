@@ -49,6 +49,12 @@ bool mytoken(string s)
 
 // IDENT DFA
 // This FA is for RE: **
+/** Check if input string is an identifier.
+ *
+ * \startuml
+ * !include fa_ident.puml
+ * \enduml
+ */
 bool ident_token(string s)
 {
     // [*] -> 0
@@ -78,6 +84,12 @@ bool ident_token(string s)
 
 // REAL DFA
 // This FA is for RE: **
+/** Check if input string is a real number.
+ *
+ * \startuml
+ * !include fa_real.puml
+ * \enduml
+ */
 bool real_token(string s)
 {
     // [*] -> 0
@@ -116,6 +128,12 @@ bool real_token(string s)
 
 //INT DFA
 // This FA is for RE: **
+/** Check if input string is an integer.
+ *
+ * \startuml
+ * !include fa_int.puml
+ * \enduml
+ */
 bool integer_token(string s)
 {
     // [*] -> 0

@@ -60,6 +60,18 @@ size_t numTransitions(size_t size)
 	return size / 4;
 }
 
+/** Reads transition and DFA meta data from files.
+ *
+ *  Uses either command line arguments, if there are exactly two,
+ *  or assumes files are with the exectuable.
+ *
+ *  The first argument is the path to the transition table.
+ *  The second argument is the path to the DFA meta data.
+ *
+ *  The files searched for are  "trs.txt" and "dfas.txt".
+ *
+ *  Reads data into global vectors.
+ */
 void readTables(int argv, char** argc)
 {
 	ifstream trsIn;
@@ -92,6 +104,8 @@ void readTables(int argv, char** argc)
 	}
 }
 
+/** Displays transition table and DFA meta data.
+ */
 void displayTables()
 {
 	// ** display DFAs nicely labeled
@@ -136,6 +150,8 @@ void displayTables()
 	}
 }
 
+/** Matches a string against the DFA meta data nd transition table.
+ */
 bool accept(info dfa, string word)
 {
 	// ** Does the dfa accept the word?

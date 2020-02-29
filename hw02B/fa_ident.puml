@@ -1,0 +1,11 @@
+@startuml
+hide empty description
+title /[ab]([ab]|[23]|_)*/ = /[ab][ab23_]*/
+
+[*] -> 0
+
+0 -> 1 : a,b
+1 -> 1 : a,b,2,3,_
+
+1 --> [*]
+@enduml
