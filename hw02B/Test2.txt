@@ -1,0 +1,67 @@
+Script started on Fri 28 Feb 2020 08:21:17 PM PST
+]0;nikul001@empress:~/cs-421-theory-of-computing/hw02B/build[?1034h[nikul001@empress build]$ ./hw2b_table ./../HW2B_Scanners/Prog2/{trs.txt,dfas.txt}
+This is a table driven scanner. Needs trs.txt and dfas.txt.
+States are 0 to 9 and chars are a to d
+         a b c d 
+State 0: 0 1     
+State 1:         
+State 2:     2 3 
+State 3:         
+State 4:         
+State 5:         
+State 6:         
+State 7:         
+State 8:         
+State 9:         
+
+token1           0 1
+token2           2 3
+.....done reading tables....
+@@Enter a string: a
+Lexical Error!
+do control-C to quit
+@@Enter a string: ab
+Found token token1
+do control-C to quit
+@@Enter a string: b
+Found token token1
+do control-C to quit
+@@Enter a string: aaaaaaab
+Found token token1
+do control-C to quit
+@@Enter a string: aaaabb
+Lexical Error!
+do control-C to quit
+@@Enter a string: aaaabaaa
+Lexical Error!
+do control-C to quit
+@@Enter a string: acd
+Lexical Error!
+do control-C to quit
+@@Enter a string: ccccd
+Found token token2
+do control-C to quit
+@@Enter a string: cd
+Found token token2
+do control-C to quit
+@@Enter a string: d
+Found token token2
+do control-C to quit
+@@Enter a string: dd
+Lexical Error!
+do control-C to quit
+@@Enter a string: dfsg24
+Lexical Error!
+do control-C to quit
+@@Enter a string: mbv 234
+Lexical Error!
+do control-C to quit
+@@Enter a string: Lexical Error!
+do control-C to quit
+@@Enter a string: sd
+Lexical Error!
+do control-C to quit
+@@Enter a string: ^C
+]0;nikul001@empress:~/cs-421-theory-of-computing/hw02B/build[nikul001@empress build]$ exit
+
+Script done on Fri 28 Feb 2020 08:22:31 PM PST

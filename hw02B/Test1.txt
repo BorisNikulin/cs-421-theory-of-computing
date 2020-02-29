@@ -1,0 +1,55 @@
+Script started on Fri 28 Feb 2020 08:17:28 PM PST
+]0;nikul001@empress:~/cs-421-theory-of-computing/hw02B/build[?1034h[nikul001@empress build]$ ./hw2b_manual ./../HW2B_Scanners/Prog1/fain.txt
+
+.....Scanner was called...
+>>>>>Word is:ab_2a
+>>>>>Type is:IDENT
+
+.....Scanner was called...
+>>>>>Word is:a_b_2_a
+>>>>>Type is:IDENT
+
+.....Scanner was called...
+>>>>>Word is:.23
+>>>>>Type is:REAL
+
+.....Scanner was called...
+>>>>>Word is:23.3
+>>>>>Type is:REAL
+
+.....Scanner was called...
+>>>>>Word is:23
+>>>>>Type is:INT
+
+.....Scanner was called...
+>>>>>Word is:ab&c
+>>>>>Lexical Error: The string is not in my language
+>>>>>Type is:ERROR
+
+.....Scanner was called...
+>>>>>Word is:23.6
+>>>>>Lexical Error: The string is not in my language
+>>>>>Type is:ERROR
+
+.....Scanner was called...
+>>>>>Word is:2a3
+>>>>>Lexical Error: The string is not in my language
+>>>>>Type is:ERROR
+
+.....Scanner was called...
+>>>>>Word is:22..2
+>>>>>Lexical Error: The string is not in my language
+>>>>>Type is:ERROR
+
+.....Scanner was called...
+>>>>>Word is:23.
+>>>>>Lexical Error: The string is not in my language
+>>>>>Type is:ERROR
+
+.....Scanner was called...
+>>>>>Word is:EOF
+>>>>>Lexical Error: The string is not in my language
+>>>>>End of File encountered
+]0;nikul001@empress:~/cs-421-theory-of-computing/hw02B/build[nikul001@empress build]$ exit
+
+Script done on Fri 28 Feb 2020 08:17:59 PM PST
