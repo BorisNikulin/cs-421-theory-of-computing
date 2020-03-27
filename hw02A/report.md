@@ -2,7 +2,7 @@
 
 To initialize and build, run
 ```
-unzip *.zip; cmake -Bbuild; make; ./hw2a;
+unzip *.zip; cmake -Bbuild; cd build; make; ./hw2a;
 ```
 
 The build artifacts are in `build`.
