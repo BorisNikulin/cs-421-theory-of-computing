@@ -84,6 +84,7 @@ void displayVector(vector<char> V)
 // to read in the rules into M, make sure ; is not stored
 void readrules(istream& rulesIn)
 {
+	// simple state machine
 	enum class State { READ_ROW, READ_COL, READ_CHAR };
 
 	State state = State::READ_ROW;
@@ -96,6 +97,7 @@ void readrules(istream& rulesIn)
 	{
 		switch (c)
 		{
+			// break state machine
 			case ';':
 			{
 				M(row, col) = rhs;
@@ -163,6 +165,8 @@ void readrules(istream& rulesIn)
 //	pushes V contents to the stack
 void addtostack(const vector<char>& V)
 {
+	// push in reverse order
+	// as the target is a stack
 	for (auto it = V.rbegin(); it != V.rend(); ++it)
 	{
 		derivation.push_front(*it);
@@ -223,16 +227,20 @@ void check(istream& sentence)
 
 		switch (top)
 		{
+			// if non terminal
 			case 'S':
 			case 'A':
 			case 'B':
 				addtostack(M(toRow(top), toCol(c)));
+				// reset input stream
 				sentence.putback(c);
 				cout << "adding rhs of a rule to the stack\n\n";
 				break;
 
+			// if terminal
 			case '0':
 			case '1':
+			default:
 				if (c == top)
 				{
 					cout << "matched!\n\n";
